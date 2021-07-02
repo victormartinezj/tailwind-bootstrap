@@ -518,17 +518,100 @@
                 px-3
                 rounded
                 text-xl
+                hover:bg-blue-500 hover:text-white
+                focus:ring-4 focus:ring-blue-500 focus:ring-opacity-30
               "
             >
               Read installation docs
             </button>
           </div>
           <div class="py-5">
-            <div class="bg-gray-200 py-4 px-2 font-mono rounded mb-3">
+            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
               <p>$ npm install bootstrap</p>
             </div>
-            <div class="bg-gray-200 py-4 px-2 font-mono rounded mb-3">
+            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
               <p>$ gem install bootstrap -v 5.0.2</p>
+            </div>
+          </div>
+        </section>
+        <section class="mb-12">
+          <div>
+            <div
+              class="
+                bg-blue-500
+                flex
+                inline-flex
+                w-14
+                h-14
+                justify-center
+                items-center
+                text-white
+                rounded-xl
+                mb-3
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-cloud-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+                />
+              </svg>
+            </div>
+            <h2 class="text-4xl mb-3">jsDelivr</h2>
+            <p class="text-xl mb-3">
+              When you only need to include Bootstrap’s compiled CSS or JS, you
+              can use
+              <span class="text-blue-500 underline"> jsDelivr</span>.
+            </p>
+            <p class="mb-3">
+              See it in action with our simple
+              <span class="text-blue-500 underline"> starter template </span>
+              , or
+              <span class="text-blue-500 underline"> browse the examples </span>
+              to jumpstart your next project. You can also choose to include
+              Popper and our JS
+              <span class="text-blue-500 underline"> separately </span>.
+            </p>
+            <button
+              class="
+                border border-blue-500
+                text-blue-500
+                py-2
+                px-3
+                rounded
+                text-xl
+                hover:bg-blue-500 hover:text-white
+                focus:ring-4 focus:ring-blue-500 focus:ring-opacity-30
+              "
+            >
+              Explore the docs
+            </button>
+          </div>
+          <div class="py-5">
+            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
+              <p>&lt;!-- CSS only --&gt;</p>
+              <p class="overflow-auto whitespace-nowrap">
+                &lt;link
+                href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot;
+                rel=&quot;stylesheet&quot;
+                integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot;
+                crossorigin=&quot;anonymous&quot;&gt;
+              </p>
+            </div>
+            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
+              <p>&lt;!-- JavaScript Bundle with Popper --&gt;</p>
+              <p class="overflow-auto whitespace-nowrap">
+                &lt;script
+                src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot;
+                integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot;
+                crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+              </p>
             </div>
           </div>
         </section>
