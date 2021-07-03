@@ -16,6 +16,8 @@
           flex flex-wrap
           justify-between
           md:justify-start md:flex-nowrap md:items-center
+          xl:max-w-7xl
+          mx-auto
         "
       >
         <svg
@@ -238,7 +240,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container mx-auto xl:max-w-5xl">
       <div class="py-8">
         <div class="px-3 md:flex">
           <div class="flex justify-center md:order-1 md:items-start">
@@ -851,8 +853,19 @@
       </div>
     </main>
     <footer class="py-12 bg-gray-100 bg-opacity-50">
-      <div class="py-12 px-12 flex flex-wrap text-gray-600">
-        <div class="mb-5">
+      <div
+        class="
+          py-12
+          px-12
+          flex flex-wrap
+          text-gray-600
+          lg:flex-nowrap
+          container
+          mx-auto
+          xl:max-w-5xl
+        "
+      >
+        <div class="mb-5 lg:pr-16">
           <div class="flex items-center mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
