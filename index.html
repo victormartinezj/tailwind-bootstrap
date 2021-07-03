@@ -240,11 +240,11 @@
     </header>
     <main>
       <div class="py-8">
-        <div class="px-3">
-          <div class="flex justify-center">
+        <div class="px-3 md:flex">
+          <div class="flex justify-center md:order-1 md:items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-1/2"
+              class="w-1/2 md:w-full"
               role="img"
               viewBox="0 0 900 800"
             >
@@ -523,7 +523,7 @@
               </g>
             </svg>
           </div>
-          <div class="text-center mx-8">
+          <div class="text-center mx-8 md:w-1/2 md:text-left">
             <h2 class="text-5xl mb-5">
               Build fast, responsive sites with Bootstrap
             </h2>
@@ -544,6 +544,7 @@
                 hover:bg-primaryDark
                 focus:ring-4 focus:ring-primary focus:ring-opacity-20
                 mb-3
+                md:w-auto md:px-6 md:mr-5
               "
             >
               Get started
@@ -560,6 +561,7 @@
                 text-xl
                 focus:ring-4 focus:ring-gray-500 focus:ring-opacity-20
                 mb-3
+                md:w-auto md:px-6
               "
             >
               Download
