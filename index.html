@@ -9,7 +9,17 @@
   </head>
   <body class="">
     <header class="bg-primary py-3">
-      <nav class="px-3 text-gray-100 flex flex-wrap justify-between">
+      <nav
+        class="
+          px-3
+          text-gray-100
+          flex flex-wrap
+          justify-between
+          md:justify-start md:flex-nowrap md:items-center
+          xl:max-w-7xl
+          mx-auto
+        "
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -26,7 +36,7 @@
           />
         </svg>
         <button
-          class="focus:ring-4 focus:ring-gray-100 rounded"
+          class="focus:ring-4 focus:ring-gray-100 rounded md:hidden"
           data-hc-control="menu"
         >
           <svg
@@ -43,7 +53,7 @@
             />
           </svg>
         </button>
-        <div class="w-screen pt-3" data-hc-content="menu">
+        <div class="w-screen pt-3 md:hidden" data-hc-content="menu">
           <ul class="flex flex-wrap">
             <li class="w-1/2 pb-3">Home</li>
             <li class="w-1/2 pb-3">Docs</li>
@@ -52,7 +62,7 @@
             <li class="w-1/2 pb-3">Themes</li>
             <li class="w-1/2 pb-3">Blog</li>
           </ul>
-          <div class="border-b w-screen my-5 border-opacity-20"></div>
+          <div class="border-b w-full my-5 border-opacity-20"></div>
           <ul class="flex flex-wrap">
             <li class="w-1/2 pb-3 flex items-center">
               <svg
@@ -138,15 +148,105 @@
             </li>
           </ul>
         </div>
+        <div class="hidden md:flex md:flex-grow md:mx-4 md:justify-between">
+          <ul class="md:flex items-center">
+            <li class="mr-4">Home</li>
+            <li class="mr-4">Docs</li>
+            <li class="mr-4">Examples</li>
+            <li class="mr-4">Icons</li>
+            <li class="mr-4">Themes</li>
+            <li class="mr-4">Blog</li>
+          </ul>
+          <ul class="md:flex items-center">
+            <li class="mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </li>
+            <li class="mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </li>
+            <li class="mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-slack"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"
+                />
+              </svg>
+            </li>
+            <li class="mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                fill-rule="evenodd"
+                class="navbar-nav-svg d-inline-block align-text-top"
+                viewBox="0 0 40 41"
+                role="img"
+              >
+                <title>Open Collective</title>
+                <path
+                  fill-opacity=".4"
+                  d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"
+                ></path>
+                <path
+                  d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"
+                ></path>
+              </svg>
+            </li>
+            <li class="">
+              <button
+                class="
+                  border border-yellow-200
+                  text-yellow-200
+                  px-3
+                  py-2
+                  rounded
+                  hover:text-primary hover:bg-yellow-200
+                  focus:ring-4 focus:ring-yellow-200 focus:ring-opacity-20
+                "
+              >
+                Download
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="container mx-auto xl:max-w-5xl">
       <div class="py-8">
-        <div class="px-3">
-          <div class="flex justify-center">
+        <div class="px-3 md:flex">
+          <div class="flex justify-center md:order-1 md:items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-1/2"
+              class="w-1/2 md:w-full"
               role="img"
               viewBox="0 0 900 800"
             >
@@ -425,7 +525,7 @@
               </g>
             </svg>
           </div>
-          <div class="text-center mx-8">
+          <div class="text-center mx-8 md:w-1/2 md:text-left">
             <h2 class="text-5xl mb-5">
               Build fast, responsive sites with Bootstrap
             </h2>
@@ -446,6 +546,7 @@
                 hover:bg-primaryDark
                 focus:ring-4 focus:ring-primary focus:ring-opacity-20
                 mb-3
+                md:w-auto md:px-6 md:mr-5
               "
             >
               Get started
@@ -462,6 +563,7 @@
                 text-xl
                 focus:ring-4 focus:ring-gray-500 focus:ring-opacity-20
                 mb-3
+                md:w-auto md:px-6
               "
             >
               Download
@@ -475,8 +577,8 @@
         </div>
       </div>
       <div class="px-12">
-        <section class="mb-12">
-          <div>
+        <section class="mb-12 md:flex">
+          <div class="md:w-1/2 md:pr-16">
             <div
               class="
                 bg-customGreen
@@ -530,7 +632,7 @@
               Read installation docs
             </button>
           </div>
-          <div class="py-5">
+          <div class="py-5 md:w-1/2 md:flex md:flex-col md:justify-center">
             <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
               <p>$ npm install bootstrap</p>
             </div>
@@ -539,8 +641,8 @@
             </div>
           </div>
         </section>
-        <section class="mb-12">
-          <div>
+        <section class="mb-12 md:flex">
+          <div class="md:w-1/2 md:pr-16">
             <div
               class="
                 bg-blue-500
@@ -598,10 +700,21 @@
               Explore the docs
             </button>
           </div>
-          <div class="py-5">
-            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
+          <div class="py-5 md:w-1/2 md:flex md:flex-col md:justify-center">
+            <div
+              class="
+                bg-gray-200
+                py-5
+                px-2
+                font-mono
+                rounded
+                mb-3
+                overflow-auto
+                whitespace-nowrap
+              "
+            >
               <p>&lt;!-- CSS only --&gt;</p>
-              <p class="overflow-auto whitespace-nowrap">
+              <p class="">
                 &lt;link
                 href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot;
                 rel=&quot;stylesheet&quot;
@@ -609,9 +722,20 @@
                 crossorigin=&quot;anonymous&quot;&gt;
               </p>
             </div>
-            <div class="bg-gray-200 py-5 px-2 font-mono rounded mb-3">
+            <div
+              class="
+                bg-gray-200
+                py-5
+                px-2
+                font-mono
+                rounded
+                mb-3
+                overflow-auto
+                whitespace-nowrap
+              "
+            >
               <p>&lt;!-- JavaScript Bundle with Popper --&gt;</p>
-              <p class="overflow-auto whitespace-nowrap">
+              <p class="">
                 &lt;script
                 src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot;
                 integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot;
@@ -620,8 +744,8 @@
             </div>
           </div>
         </section>
-        <section class="mb-12">
-          <div>
+        <section class="mb-12 md:flex">
+          <div class="md:w-1/2 md:pr-16">
             <div
               class="
                 bg-primary
@@ -677,15 +801,15 @@
               Get Bootstrap Icons
             </button>
           </div>
-          <div class="py-5">
+          <div class="py-5 md:w-1/2 md:flex md:items-center">
             <img
               src="https://getbootstrap.com/docs/5.0/assets/img/bootstrap-icons.png"
               alt="bootstrap"
             />
           </div>
         </section>
-        <section class="mb-12">
-          <div>
+        <section class="mb-12 md:flex">
+          <div class="md:w-1/2 md:pr-16">
             <div
               class="
                 bg-red-500
@@ -741,7 +865,7 @@
               Browse themes
             </button>
           </div>
-          <div class="py-5">
+          <div class="py-5 md:w-1/2 md:flex md:items-center">
             <img
               src="https://getbootstrap.com/docs/5.0/assets/img/bootstrap-themes.png"
               alt="bootstrap"
@@ -751,8 +875,19 @@
       </div>
     </main>
     <footer class="py-12 bg-gray-100 bg-opacity-50">
-      <div class="py-12 px-12 flex flex-wrap text-gray-600">
-        <div class="mb-5">
+      <div
+        class="
+          py-12
+          px-12
+          flex flex-wrap
+          text-gray-600
+          lg:flex-nowrap
+          container
+          mx-auto
+          xl:max-w-5xl
+        "
+      >
+        <div class="mb-5 lg:pr-16">
           <div class="flex items-center mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -854,6 +989,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
